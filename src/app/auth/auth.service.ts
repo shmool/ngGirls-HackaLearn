@@ -13,7 +13,7 @@ export class AuthService {
   }
 
   getHello$(name:string) {
-    return this.httpClient.post(`api/HelloWorld`,{}, {responseType: 'text'});
+    return this.httpClient.post(`api/HelloWorld`,{});
     // return this.httpClient.get(`api/HelloWorld?name=Hello`, {responseType: 'text'});
 
   }
