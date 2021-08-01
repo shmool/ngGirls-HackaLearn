@@ -2,12 +2,12 @@
   "routes": [
     {
       "route": "/admin",
-      "allowedRoles": ["authenticated"]
+      "allowedRoles": ["authenticated"],
+      "serve": "/index.html"
     },
     {
       "route": "/*",
-      "redirect": "",
-      "allowedRoles": ["anonymous"]
+      "serve": "/index.html"
     }
   ],
   "responseOverrides": {
