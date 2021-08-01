@@ -2,8 +2,18 @@
   "routes": [
     {
       "route": "/admin",
-      "redirect": "index.html",
       "allowedRoles": ["authenticated"]
+    },
+    {
+      "route": "/*",
+      "redirect": "",
+      "allowedRoles": ["anonymous"]
     }
-  ]
+  ],
+  "responseOverrides": {
+    "401": {
+      "redirect": "/login",
+      "statusCode": 302
+    }
+  }
 }
