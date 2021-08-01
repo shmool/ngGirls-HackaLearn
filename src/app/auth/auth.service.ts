@@ -13,7 +13,7 @@ export class AuthService {
   constructor(private httpClient: HttpClient) { }
 
   getUser$() {
-    return this.httpClient.get<IUser>('http://localhost:4280/.auth/me');
+    return this.httpClient.get<IUser>('.auth/me');
   }
 
   getHello$(name:string) {
