@@ -3,11 +3,11 @@
     {
       "route": "/admin",
       "allowedRoles": ["authenticated"],
-      "serve": "/index.html"
+      "rewrite": "/index.html"
     },
     {
       "route": "/*",
-      "serve": "/index.html"
+      "rewrite": "/index.html"
     }
   ],
   "responseOverrides": {
