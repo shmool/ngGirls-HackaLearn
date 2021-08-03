@@ -21,4 +21,9 @@ export class AuthService {
     // return this.httpClient.get(`api/HelloWorld?name=Hello`, {responseType: 'text'});
 
   }
+
+  postHelloNew$(name: string) {
+    return this.httpClient.post(`api/HelloNew`,{name}, {responseType: 'text'});
+
+  }
 }

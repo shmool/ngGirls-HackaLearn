@@ -4,6 +4,9 @@
 <a href=".auth/login/twitter">Log in with Twitter</a><br>
 <a href=".auth/login/aad">Log in with AAD</a><br>
 
+
+<h1>{{ helloNew$ | async }}</h1>
+
 <div *ngIf="helloMessage$ | async as helloMessage">
   {{ helloMessage.responseMessage }}
 

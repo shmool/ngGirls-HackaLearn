@@ -2,12 +2,7 @@
   "routes": [
     {
       "route": "/admin",
-      "allowedRoles": ["authenticated"],
-      "rewrite": "/index.html"
-    },
-    {
-      "route": "/*",
-      "rewrite": "/index.html"
+      "allowedRoles": ["authenticated"]
     }
   ],
   "responseOverrides": {
